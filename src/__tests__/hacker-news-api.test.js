@@ -28,7 +28,12 @@ describe('getStory - ', () => {
     expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/item/9999.json?print=pretty');
   })
 
-  xit('should resolve the story data', () => {
+  it('should resolve the story data', () => {
+    getStory(16558540)
+      .then(resolvedData => {
+        expect(resolvedData).toBeDefined();
+        expect(resolvedData.title).toEqual("Debian 9.4 released");
+      })
   })
 
   xit('should reject if the id does not correspond to a hacker news story', async () => {
