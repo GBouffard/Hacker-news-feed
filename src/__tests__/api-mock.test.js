@@ -42,6 +42,10 @@ describe('getStory - ', () => {
       })
   })
 
-  xit('works when the api call is mocked with reject', async () => {
+  it('works when the api call is mocked with reject', async () => {
+    axios.get = jest.fn().mockImplementation(() => Promise.reject('There is no Hacker news story corresponding to this ID.'))
+
+    expect(getStory()).rejects
+      .toEqual('There is no Hacker news story corresponding to this ID.');
   })
 })
