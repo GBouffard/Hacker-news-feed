@@ -12,7 +12,12 @@ describe('getTopStories - ', () => {
     expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/topstories.json');
   })
 
-  xit('should load top stories limited by the given number', () => {
+  it('should load top stories limited by the given number', () => {
+    getTopStories(25)
+      .then(resolvedData => {
+        expect(resolvedData).toBeDefined();
+        expect(resolvedData.length).toEqual(25);
+      })
   })
 })
 
