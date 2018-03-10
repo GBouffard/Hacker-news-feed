@@ -22,7 +22,10 @@ describe('getTopStories - ', () => {
 })
 
 describe('getStory - ', () => {
-  xit('should make the correct api call', () => {
+  it('should make the correct api call', () => {
+    jest.spyOn(axios, 'get')
+    getStory(9999);
+    expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/item/9999.json?print=pretty');
   })
 
   xit('should resolve the story data', () => {
