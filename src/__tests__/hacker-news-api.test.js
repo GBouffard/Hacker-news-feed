@@ -6,7 +6,10 @@ import {
 } from '../services/hacker-news-api';
 
 describe('getTopStories - ', () => {
-  xit('should make the correct api call', () => {
+  it('should make the correct api call', () => {
+    jest.spyOn(axios, 'get')
+    getTopStories(25);
+    expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/topstories.json');
   })
 
   xit('should load top stories limited by the given number', () => {
