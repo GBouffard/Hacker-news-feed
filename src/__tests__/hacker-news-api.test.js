@@ -1,6 +1,5 @@
 import axios from 'axios';
 import apiCalls from '../constants/constants';
-
 import {
   getTopStories,
   getStory
