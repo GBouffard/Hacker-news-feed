@@ -26,7 +26,7 @@ describe('getStory - ', () => {
   it('should make the correct api call', () => {
     jest.spyOn(axios, 'get')
     getStory(9999);
-    expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/item/9999.json?print=pretty');
+    expect(axios.get).toHaveBeenCalledWith(apiCalls.getStory(9999));
   })
 
   it('should resolve the story data', () => {

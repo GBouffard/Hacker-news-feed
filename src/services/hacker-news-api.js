@@ -16,7 +16,7 @@ function getTopStories(limit) {
 
 function getStory (id) {
   return new Promise((resolve, reject) => {
-    axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json?print=pretty`)
+    axios.get(apiCalls.getStory(id))
       .then(response => {
         if (response.data) {
           resolve(response.data)
