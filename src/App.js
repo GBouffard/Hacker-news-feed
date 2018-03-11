@@ -55,10 +55,9 @@ class App extends Component {
 
         <header
           className="App-header">
-          <h1
-            className="App-title">
-              Guillaume's Hacker News Feed
-          </h1>
+          <img
+            className="App-logo"
+            src="/images/Guillaume_hacker_news.png" />
         </header>
 
         {this.state.storiesElement}
