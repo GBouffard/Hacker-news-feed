@@ -1,0 +1,19 @@
+.story-content {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  margin: 2px;
+}
+
+.story-content__title-and-author-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-content__title {
+  font-weight: bold;
+}
+
+.story-content__author {
+  font-style: italic;
+}
