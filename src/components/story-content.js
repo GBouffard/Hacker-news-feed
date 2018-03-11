@@ -11,6 +11,7 @@ const StoryContent = ({ by, id, score, title }) => {
         className="story-content__score">
         {score}
       </div>
+      
       <div
         className="story-content__title-and-author-container">
         <div

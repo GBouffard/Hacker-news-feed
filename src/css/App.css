@@ -1,4 +1,14 @@
-.App {
+html,
+body {
+    height:100%;
+}
+
+body {
+  background: radial-gradient(circle, papayawhip, seashell, wheat);
+}
+
+.App-header,
+.App-loading {
   text-align: center;
 }
 
