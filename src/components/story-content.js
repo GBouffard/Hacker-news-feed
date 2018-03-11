@@ -7,7 +7,8 @@ const StoryContent = ({ by, id, score, title }) => {
     <div
       className="story-content"
       key={id}>
-      <div>
+      <div
+        className="story-content__score">
         {score}
       </div>
       <div

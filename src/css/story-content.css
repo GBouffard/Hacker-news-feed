@@ -10,6 +10,17 @@
   flex-direction: column;
 }
 
+.story-content__score {
+  font-weight: bold;
+  font-size: .8rem;
+  color: darkred;
+  background: lightsalmon;
+  max-height: .8rem;
+  padding: .4rem;
+  border: .1rem solid darkred;
+  border-radius: 1rem;
+}
+
 .story-content__title {
   font-weight: bold;
 }
