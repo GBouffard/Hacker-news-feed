@@ -39,6 +39,6 @@ describe('getStory - ', () => {
 
   it('should reject if the id does not correspond to a hacker news story', async () => {
     await expect(getStory(0)).rejects
-      .toEqual('There is no Hacker news story corresponding to this ID.');
+      .toEqual(apiCalls.getStoryReject);
   })
 })

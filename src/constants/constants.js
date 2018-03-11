@@ -5,7 +5,8 @@ const compiled = _.template(getStoryTemplate);
 
 const apiCalls = {
   topStories: 'https://hacker-news.firebaseio.com/v0/topstories.json',
-  getStory: (storyId) => compiled({ id: storyId })
+  getStory: (storyId) => compiled({ id: storyId }),
+  getStoryReject: 'There is no Hacker news story corresponding to this ID.'
 };
 
 export default apiCalls;

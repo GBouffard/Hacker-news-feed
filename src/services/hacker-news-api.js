@@ -21,7 +21,7 @@ function getStory (id) {
         if (response.data) {
           resolve(response.data)
         } else {
-          reject('There is no Hacker news story corresponding to this ID.')
+          reject(apiCalls.getStoryReject)
         }
       })
       .catch(error => {
