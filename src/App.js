@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LoadingComponent from './components/loading-component';
 import StoryContent from './components/story-content';
 import {
   getTopStories,
@@ -12,7 +13,7 @@ class App extends Component {
     this.updateStories = this.updateStories.bind(this);
     this.state = {
       storiesData: [],
-      storiesElement: 'Loading'
+      storiesElement: LoadingComponent()
     }
   }
 
