@@ -5,7 +5,7 @@ import {
   getTopStories,
   getStory
 } from './services/hacker-news-api'
-import './App.css';
+import './css/App.css';
 
 class App extends Component {
   constructor() {
@@ -31,7 +31,14 @@ class App extends Component {
 
   updateStories() {
     if (this.state.storiesData.length) {
-      const makeStoriesElements = this.state.storiesData.map((element) => StoryContent(element));
+      const makeStories = this.state.storiesData.map((element) => StoryContent(element));
+
+      const makeStoriesElements = (
+        <section
+          className="stories-container">
+          {makeStories}
+        </section>
+      );
 
       this.setState({
         storiesElement: makeStoriesElements
@@ -43,11 +50,19 @@ class App extends Component {
     setTimeout(this.updateStories, 5000);
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Guillaume's Hacker News Feed</h1>
+      <div
+        className="App">
+
+        <header
+          className="App-header">
+          <h1
+            className="App-title">
+              Guillaume's Hacker News Feed
+          </h1>
         </header>
+
         {this.state.storiesElement}
+
       </div>
     );
   }
