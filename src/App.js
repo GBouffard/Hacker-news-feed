@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
+import StoryContent from './components/story-content';
 import {
   getTopStories,
   getStory
 } from './services/hacker-news-api'
 import './App.css';
-
-const StoryDiv = ({ by, descendants, id, kids, score, time, title, type, url }) => {
-  return (
-    <div
-      key={id}>
-      {title}
-    </div>
-  );
-};
 
 class App extends Component {
   constructor() {
@@ -38,7 +30,7 @@ class App extends Component {
 
   updateStories() {
     if (this.state.storiesData.length) {
-      const makeStoriesElements = this.state.storiesData.map((element) => StoryDiv(element));
+      const makeStoriesElements = this.state.storiesData.map((element) => StoryContent(element));
 
       this.setState({
         storiesElement: makeStoriesElements
