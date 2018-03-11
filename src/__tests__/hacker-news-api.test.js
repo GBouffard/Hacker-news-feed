@@ -1,4 +1,5 @@
 import axios from 'axios';
+import apiCalls from '../constants/constants';
 
 import {
   getTopStories,
@@ -9,7 +10,7 @@ describe('getTopStories - ', () => {
   it('should make the correct api call', () => {
     jest.spyOn(axios, 'get')
     getTopStories(25);
-    expect(axios.get).toHaveBeenCalledWith('https://hacker-news.firebaseio.com/v0/topstories.json');
+    expect(axios.get).toHaveBeenCalledWith(apiCalls.topStories);
   })
 
   it('should load top stories limited by the given number', () => {

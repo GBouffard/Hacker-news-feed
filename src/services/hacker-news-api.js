@@ -1,8 +1,9 @@
 import axios from 'axios';
+import apiCalls from '../constants/constants';
 
 function getTopStories(limit) {
   return new Promise((resolve, reject) => {
-    axios.get('https://hacker-news.firebaseio.com/v0/topstories.json')
+    axios.get(apiCalls.topStories)
       .then(response => {
         resolve(response.data.slice(0, limit))
       })
