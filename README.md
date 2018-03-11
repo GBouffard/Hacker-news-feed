@@ -11,6 +11,7 @@ Technologies used:
 - ES6 syntax
 - create-react-app
 - React
+- lodash
 - BEM
 - HTML
 - CSS
