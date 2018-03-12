@@ -8,18 +8,18 @@ const StoryPopUp = ({ id, title }) => {
       id={`popup-${id}`}
       className="popup">
       <div
-        class="popup__content">
+        className="popup__content">
         <div
-          class="popup__story-title">
+          className="popup__story-title">
           {title}
         </div>
         <a
-          class="popup__close-button"
+          className="popup__close-button"
           href="#">
           &times;
         </a>
         <div
-          class="popup__story-text">
+          className="popup__story-text">
           text still to come...
         </div>
       </div>
@@ -28,7 +28,7 @@ const StoryPopUp = ({ id, title }) => {
 };
 
 StoryPopUp.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired
 };
 

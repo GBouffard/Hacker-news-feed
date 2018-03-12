@@ -2,11 +2,12 @@ import React from 'react';
 import StoryPreviewLink from './story-preview-link';
 import StoryPopUp from './story-pop-up';
 import PropTypes from 'prop-types';
-import '../css/story-content.css';
+import '../css/App.css';
 
 const StoryContent = (props) => {
   return (
     <div
+      key={props.id}
       className="story-content">
 
       <StoryPreviewLink

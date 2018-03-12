@@ -18,6 +18,7 @@ function getStory (id) {
   return new Promise((resolve, reject) => {
     axios.get(apiCalls.getStory(id))
       .then(response => {
+        console.log(response.data);
         if (response.data) {
           resolve(response.data)
         } else {
