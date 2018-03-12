@@ -15,7 +15,8 @@ const StoryContent = (props) => {
 
       <StoryPopUp
         id={props.id}
-        title={props.title} />
+        title={props.title}
+        url={props.url} />
 
     </div>
   );
@@ -25,7 +26,8 @@ StoryContent.propTypes = {
   by: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   score: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string
 }
 
 export default StoryContent;

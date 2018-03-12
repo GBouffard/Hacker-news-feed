@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    getTopStories(10)
+    getTopStories(500)
       .then((topSTories) => {
         for (let i = 0; i < topSTories.length; i++) {
           getItem(topSTories[i])

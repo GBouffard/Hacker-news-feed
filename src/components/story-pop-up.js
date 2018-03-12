@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../css/story-pop-up.css';
 
-const StoryPopUp = ({ id, title }) => {
+const StoryPopUp = ({ id, title, url }) => {
+  let storyUrl = url ? url : 'no url associated to this story';
+
   return (
     <div
       id={`popup-${id}`}
@@ -20,7 +22,7 @@ const StoryPopUp = ({ id, title }) => {
         </a>
         <div
           className="popup__story-text">
-          text still to come...
+          url: {storyUrl}
         </div>
       </div>
     </div>
@@ -29,7 +31,8 @@ const StoryPopUp = ({ id, title }) => {
 
 StoryPopUp.propTypes = {
   id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string
 };
 
 export default StoryPopUp;

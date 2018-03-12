@@ -2,7 +2,8 @@
 ===
 This is Guillaume's Hacker News Feed:
 
-The popular news site Hacker News (HN) run by YCombinator provides interesting links to news articles and blog posts that are related to information technology. This project is a more eye-pleasing version of the top 500 stories listed on HN using their official API. 
+The popular news site Hacker News (HN) run by YCombinator provides interesting links to news articles and blog posts that are related to information technology. This project is a more eye-pleasing version of the top 500 stories listed on HN using their official API.
+On a story click, a popup expands with information regarding the story; in the absence of text being given with the API, I replace it with the url of the story.
 
 
 Technologies used:
@@ -24,7 +25,11 @@ Technologies used:
 Desktop preview:
 ----
 
-To come
+![](public/images/Screenshot1.png)
+
+![](public/images/Screenshot2.png)
+
+![](public/images/Screenshot2.png)
 
 Tests preview:
 ----
