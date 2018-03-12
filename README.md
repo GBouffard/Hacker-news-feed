@@ -37,6 +37,8 @@ Tests preview:
 
 ![](public/images/Test1.jpg)
 
+![](public/images/Test2.jpg)
+
 To come
 
 How to run it:
@@ -53,8 +55,8 @@ Methodology:
 ----
 - I first scaffolded the app through react-create-app.
 - I started with unit logic tests (mock and then real API) and based the api logic on how it is supposed to work.
-- I then started with the React hierarchy to render what is expected from the project. I also added some css and styling along the way. I even added some quick wins/changes to accommodate to responsive design.
-
+- I then started with the React hierarchy to render what is expected from the project, adding css and styling as I went along. I even added some quick wins/changes to accommodate to responsive design.
+- I added a spinner gif in order to wait for the api 's response. Ideally the stories would load once received but for implementation purposes I made the spinner last 5 seconds.
 
 What I learnt:
 ----
@@ -64,8 +66,9 @@ What I learnt:
 
 What to improve:
 ----
-- The logic of the API calls is unit tested however for some reasons the enzyme, react-test-renderer and Chai set-up/versioning conflicted; answers found on StackOverflow and Github didn't resolve so after a while, instead of being stuck I decided to skip integration tests and delay additional debugging to later. I like TDD so have investigated other testing frameworks to use for functional tests but didn't have the time to try them yet. I added snapshot tests at the end to at least have additional security regarding the strength of the code and application.
-- There might be more efficient ways to access data from the API and I am keen to learn about them.
+- I noticed only towards the end of the project that the columns widths can after a certain amount of time inexplicably grow! I worked for most of the project with only 10 top stories to start small. I would need to spend time investigating why this behaviour is happening. It also unfortunately make my responsive design irrelevant when this behaviour happens.
+- For some reasons the enzyme, react-test-renderer and Chai set-up/versioning conflicted; answers found on StackOverflow and Github didn't resolve so after a while, instead of being stuck I decided to skip integration tests and delay additional debugging to later. I like TDD so have investigated other testing frameworks to use for functional tests but didn't have the time to try them yet. I added snapshot tests at the end to add additional security regarding the strength of the isolated React Components.
+- There might be more efficient ways to access data from the API and I am keen to learn about them; also it would be best to load the content once the response comes back instead of a fixed 5 seconds delay.
 - sass or less compiling instead of css could also be added.
 - Component state is fine as a MVP, but an application architecture such as Flux or Redux would be a great addition.
 - A continuous integration tool could also be added.
