@@ -41,6 +41,10 @@ const StoryContent = ({ by, id, score, title }) => {
             href="#">
             &times;
           </a>
+          <div
+            class="popup__story-text">
+            text still to come...
+          </div>
         </div>
       </div>
     </div>

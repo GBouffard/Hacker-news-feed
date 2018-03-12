@@ -86,3 +86,10 @@
 .popup__close-button:hover {
   color: crimson;
 }
+
+.popup__story-text {
+  overflow: auto;
+  font-size: .8rem;
+  margin-top: 1rem;
+  color: darkslategrey;
+}
