@@ -1,46 +1,43 @@
-.story-content {
-  display: inline-grid;
-}
-
-.story-content__link {
+.story-preview__link {
   display: flex;
   justify-content: space-between;
-  border: .1rem solid darkred;
+  height: 100%;
   padding: 3px;
   background: linear-gradient(to bottom right, red, sandybrown);
-  height: 100%;
+  border: .1rem solid darkred;
   text-decoration: none;
 }
 
-.story-content__link:hover {
+.story-preview__link:hover {
   background: linear-gradient(to bottom right, darkred, crimson);
 }
 
-.story-content__title-and-author-container {
+.story-preview__title-and-author-container {
   display: flex;
   flex-direction: column;
-  font-size: .7rem;
   justify-content: space-between;
+  font-size: .7rem;
 }
 
-.story-content__score {
-  font-weight: bold;
-  font-size: .8rem;
-  color: darkred;
-  background: lightsalmon;
-  margin-right: .2rem;
+.story-preview__score {
+  min-width: .7rem;
   max-height: .8rem;
+  margin-right: .2rem;
   padding: .4rem;
+  background: lightsalmon;
   border: .1rem solid darkred;
   border-radius: 1rem;
+  font-size: .8rem;
+  font-weight: bold;
+  color: darkred;
 }
 
-.story-content__title {
+.story-preview__title {
   padding-bottom: .7rem;
   color: seashell;
 }
 
-.story-content__author {
+.story-preview__author {
   font-style: italic;
   color: darkred;
 }

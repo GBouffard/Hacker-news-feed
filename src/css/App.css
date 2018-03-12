@@ -1,6 +1,6 @@
 html,
 body {
-    height:100%;
+  height:100%;
 }
 
 body {
@@ -13,15 +13,15 @@ body {
 }
 
 .App-header {
-  background-image: url('/images/dark-stone-wall-background-tile.jpg');
   height: 150px;
   padding: 20px;
+  background-image: url('/images/dark-stone-wall-background-tile.jpg');
 }
 
 .stories-container {
   display: grid;
-  grid-template-columns: repeat(8, auto);
   grid-gap: 1rem;
+  grid-template-columns: repeat(8, auto);
   padding: 1rem;
 }
 
@@ -53,4 +53,8 @@ body {
   .App-logo {
     width: 100%;
   }
+}
+
+.story-content {
+  display: inline-grid;
 }
