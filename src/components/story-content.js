@@ -4,25 +4,28 @@ import '../css/story-content.css';
 
 const StoryContent = ({ by, id, score, title }) => {
   return (
-    <div
-      className="story-content"
-      key={id}>
-      <div
-        className="story-content__score">
-        {score}
-      </div>
-      
-      <div
-        className="story-content__title-and-author-container">
+    <div>
+      <a
+        href={``}
+        className="story-content"
+        key={id}>
         <div
-          className="story-content__title">
-          {title}
+          className="story-content__score">
+          {score}
         </div>
+
         <div
-          className="story-content__author">
-          by: {by}
+          className="story-content__title-and-author-container">
+          <div
+            className="story-content__title">
+            {title}
+          </div>
+          <div
+            className="story-content__author">
+            by: {by}
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
