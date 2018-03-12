@@ -6,7 +6,7 @@ const StoryContent = ({ by, id, score, title }) => {
   return (
     <div>
       <a
-        href={``}
+        href={`#popup-box-${id}`}
         className="story-content"
         key={id}>
         <div
@@ -26,6 +26,15 @@ const StoryContent = ({ by, id, score, title }) => {
           </div>
         </div>
       </a>
+
+      <div
+        id={`popup-box-${id}`}
+        className="popup">
+        <div
+          class="popup__content">
+          still to come
+        </div>
+      </div>
     </div>
   );
 };
