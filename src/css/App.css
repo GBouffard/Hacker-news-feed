@@ -24,3 +24,33 @@ body {
   grid-gap: 1rem;
   padding: 1rem;
 }
+
+/* unconventional breakpoints but allow fluidity with the design */
+
+@media screen and (max-width: 980px) {
+  .stories-container {
+    grid-template-columns: repeat(6, auto);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories-container {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .stories-container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .stories-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .App-logo {
+    width: 100%;
+  }
+}
