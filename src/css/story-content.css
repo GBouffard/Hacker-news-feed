@@ -1,4 +1,8 @@
 .story-content {
+  display: inline-grid;
+}
+
+.story-content__link {
   display: flex;
   justify-content: space-between;
   border: .1rem solid darkred;
@@ -8,7 +12,7 @@
   text-decoration: none;
 }
 
-.story-content:hover {
+.story-content__link:hover {
   background: linear-gradient(to bottom right, darkred, crimson);
 }
 

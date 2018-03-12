@@ -5,10 +5,11 @@ import '../css/story-content.css';
 
 const StoryContent = ({ by, id, score, title }) => {
   return (
-    <div>
+    <div
+      className="story-content">
       <a
         href={`#popup-${id}`}
-        className="story-content"
+        className="story-content__link"
         key={id}>
         <div
           className="story-content__score">
