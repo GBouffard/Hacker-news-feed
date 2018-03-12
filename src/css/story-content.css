@@ -71,3 +71,18 @@
   font-family: fantasy;
   max-width: 95%;
 }
+
+.popup__close-button {
+  position: absolute;
+  top: 0;
+  right: .75rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.popup__close-button:hover {
+  color: crimson;
+}
