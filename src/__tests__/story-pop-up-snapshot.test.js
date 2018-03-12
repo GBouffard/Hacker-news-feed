@@ -1,14 +1,13 @@
 import React from 'react';
-import StoryPreviewLink from '../components/story-preview-link';
+import StoryPopUp from '../components/story-pop-up';
 import renderer from 'react-test-renderer';
 
-describe('StoryPreviewLink ', () => {
+describe('StoryPopUp ', () => {
   const component = renderer.create(
-    <StoryPreviewLink
-      by='Guillaume'
+    <StoryPopUp
       id={123456789}
-      score={99}
-      title='this is a snapshot test' />
+      title='this is a snapshot test'
+      url='https://github.com/GBouffard/Hacker-news-feed' />
   );
 
   const tree = component.toJSON();

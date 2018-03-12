@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryPopUp  renders correctly 1`] = `
+<div
+  className="popup"
+  id="popup-123456789"
+>
+  <div
+    className="popup__content"
+  >
+    <div
+      className="popup__story-title"
+    >
+      this is a snapshot test
+    </div>
+    <a
+      className="popup__close-button"
+      href="#"
+    >
+      ×
+    </a>
+    <div
+      className="popup__story-text"
+    >
+      url: 
+      https://github.com/GBouffard/Hacker-news-feed
+    </div>
+  </div>
+</div>
+`;
