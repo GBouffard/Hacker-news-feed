@@ -1,4 +1,5 @@
 import React from 'react';
+import StoryPopUp from './story-pop-up'
 import PropTypes from 'prop-types';
 import '../css/story-content.css';
 
@@ -6,7 +7,7 @@ const StoryContent = ({ by, id, score, title }) => {
   return (
     <div>
       <a
-        href={`#popup-box-${id}`}
+        href={`#popup-${id}`}
         className="story-content"
         key={id}>
         <div
@@ -27,26 +28,9 @@ const StoryContent = ({ by, id, score, title }) => {
         </div>
       </a>
 
-      <div
-        id={`popup-box-${id}`}
-        className="popup">
-        <div
-          class="popup__content">
-          <div
-            class="popup__story-title">
-            {title}
-          </div>
-          <a
-            class="popup__close-button"
-            href="#">
-            &times;
-          </a>
-          <div
-            class="popup__story-text">
-            text still to come...
-          </div>
-        </div>
-      </div>
+      <StoryPopUp
+        id={id}
+        title={title} />
     </div>
   );
 };
