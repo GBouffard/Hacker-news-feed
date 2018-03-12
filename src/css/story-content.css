@@ -66,3 +66,8 @@
   position: relative;
   transition: all 5s ease-in-out;
 }
+
+.popup__story-title {
+  font-family: fantasy;
+  max-width: 95%;
+}

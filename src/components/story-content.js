@@ -32,7 +32,10 @@ const StoryContent = ({ by, id, score, title }) => {
         className="popup">
         <div
           class="popup__content">
-          still to come
+          <div
+            class="popup__story-title">
+            {title}
+          </div>
         </div>
       </div>
     </div>
