@@ -12,17 +12,15 @@ function getTopStories(limit) {
       })
   })
 }
-// 339 stories btw!
 
-function getStory (id) {
+function getItem (id) {
   return new Promise((resolve, reject) => {
-    axios.get(apiCalls.getStory(id))
+    axios.get(apiCalls.getItem(id))
       .then(response => {
-        console.log(response.data);
         if (response.data) {
           resolve(response.data)
         } else {
-          reject(apiCalls.getStoryReject)
+          reject(apiCalls.getItemReject)
         }
       })
       .catch(error => {
@@ -33,5 +31,5 @@ function getStory (id) {
 
 export {
   getTopStories,
-  getStory
+  getItem
 };

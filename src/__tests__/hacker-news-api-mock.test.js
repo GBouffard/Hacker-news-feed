@@ -3,7 +3,7 @@ import mocked from '../constants/mock-api-data';
 import apiCalls from '../constants/constants';
 import {
   getTopStories,
-  getStory
+  getItem
 } from '../services/hacker-news-api';
 
 describe('getTopStories - ', () => {
@@ -18,11 +18,11 @@ describe('getTopStories - ', () => {
   })
 })
 
-describe('getStory - ', () => {
+describe('getItem - ', () => {
   it('works when the api call is mocked with resolve', () => {
     axios.get = jest.fn().mockImplementation(() => Promise.resolve({ data: mocked.story }))
 
-    getStory()
+    getItem()
       .then(resolvedData => {
         expect(resolvedData).toBeDefined();
         expect(resolvedData.title).toEqual(mocked.story.title);
@@ -30,9 +30,9 @@ describe('getStory - ', () => {
   })
 
   it('works when the api call is mocked with reject', async () => {
-    axios.get = jest.fn().mockImplementation(() => Promise.reject(apiCalls.getStoryReject))
+    axios.get = jest.fn().mockImplementation(() => Promise.reject(apiCalls.getItemReject))
 
-    expect(getStory()).rejects
-      .toEqual('There is no Hacker news story corresponding to this ID.');
+    expect(getItem()).rejects
+      .toEqual('There is no Hacker news item corresponding to this ID.');
   })
 })

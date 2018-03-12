@@ -3,7 +3,7 @@ import LoadingComponent from './components/loading-component';
 import StoryContent from './components/story-content';
 import {
   getTopStories,
-  getStory
+  getItem
 } from './services/hacker-news-api'
 import './css/App.css';
 
@@ -21,9 +21,9 @@ class App extends Component {
     getTopStories(10)
       .then((topSTories) => {
         for (let i = 0; i < topSTories.length; i++) {
-          getStory(topSTories[i])
-            .then((storyData) => {
-              this.state.storiesData.push(storyData);
+          getItem(topSTories[i])
+            .then((itemData) => {
+              this.state.storiesData.push(itemData);
             });
         }
     });

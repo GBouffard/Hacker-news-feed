@@ -2,7 +2,7 @@ import axios from 'axios';
 import apiCalls from '../constants/constants';
 import {
   getTopStories,
-  getStory
+  getItem
 } from '../services/hacker-news-api';
 
 describe('getTopStories - ', () => {
@@ -21,15 +21,15 @@ describe('getTopStories - ', () => {
   })
 })
 
-describe('getStory - ', () => {
+describe('getItem - ', () => {
   it('should make the correct api call', () => {
     jest.spyOn(axios, 'get')
-    getStory(9999);
-    expect(axios.get).toHaveBeenCalledWith(apiCalls.getStory(9999));
+    getItem(9999);
+    expect(axios.get).toHaveBeenCalledWith(apiCalls.getItem(9999));
   })
 
   it('should resolve the story data', () => {
-    getStory(16558540)
+    getItem(16558540)
       .then(resolvedData => {
         expect(resolvedData).toBeDefined();
         expect(resolvedData.title).toEqual("Debian 9.4 released");
@@ -37,7 +37,7 @@ describe('getStory - ', () => {
   })
 
   it('should reject if the id does not correspond to a hacker news story', async () => {
-    await expect(getStory(0)).rejects
-      .toEqual(apiCalls.getStoryReject);
+    await expect(getItem(0)).rejects
+      .toEqual(apiCalls.getItemReject);
   })
 })
