@@ -12,6 +12,7 @@ Technologies used:
 - ES6 syntax
 - create-react-app
 - React
+- Prop-types
 - Axios with JavaScript promises
 - Hacker News API in partnership with with Firebase.
 - Jest
@@ -29,10 +30,12 @@ Desktop preview:
 
 ![](public/images/Screenshot2.png)
 
-![](public/images/Screenshot2.png)
+![](public/images/Screenshot3.png)
 
 Tests preview:
 ----
+
+![](public/images/Test1.jpg)
 
 To come
 
