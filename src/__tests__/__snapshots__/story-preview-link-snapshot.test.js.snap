@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryPreviewLink  renders correctly 1`] = `
+<a
+  className="story-preview__link"
+  href="#popup-123456789"
+>
+  <div
+    className="story-preview__score"
+  >
+    99
+  </div>
+  <div
+    className="story-preview__title-and-author-container"
+  >
+    <div
+      className="story-preview__title"
+    >
+      this is a snapshot test
+    </div>
+    <div
+      className="story-preview__author"
+    >
+      by: 
+      Guillaume
+    </div>
+  </div>
+</a>
+`;
