@@ -1,0 +1,53 @@
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__content {
+  margin: 10rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: .5rem;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup__story-title {
+  font-family: fantasy;
+  max-width: 95%;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 0;
+  right: .75rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.popup__close-button:hover {
+  color: crimson;
+}
+
+.popup__story-text {
+  overflow: auto;
+  font-size: .8rem;
+  margin-top: 1rem;
+  color: darkslategrey;
+}

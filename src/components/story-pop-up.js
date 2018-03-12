@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../css/story-pop-up.css';
 
 const StoryPopUp = ({ id, title }) => {
   return (
