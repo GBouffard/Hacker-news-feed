@@ -54,7 +54,7 @@ PS: the script will ask to choose options regarding running Jest tests; Press a 
 Methodology:
 ----
 - I first scaffolded the app through react-create-app.
-- I started with unit logic tests (mock and then real API) and based the api logic on how it is supposed to work.
+- I started with unit logic tests (mock and then real API) and based the API logic on how it is supposed to work.
 - I then started with the React hierarchy to render what is expected from the project, adding css and styling as I went along. I even added some quick wins/changes to accommodate to responsive design.
 - I added a spinner gif in order to wait for the api 's response. Ideally the stories would load once received but for implementation purposes I made the spinner last 5 seconds.
 
