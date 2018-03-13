@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/GBouffard/Hacker-news-feed.svg?branch=master)](https://travis-ci.org/GBouffard/Hacker-news-feed)
+
 :newspaper: Hacker News Feed :newspaper:
 ===
 This is Guillaume's Hacker News Feed:
@@ -57,6 +59,7 @@ Methodology:
 - I started with unit logic tests (mock and then real API) and based the API logic on how it is supposed to work.
 - I then started with the React hierarchy to render what is expected from the project, adding css and styling as I went along. I even added some quick wins/changes to accommodate to responsive design.
 - I added a spinner gif in order to wait for the api 's response. Ideally the stories would load once received but for implementation purposes I made the spinner last 5 seconds.
+- At the end, I added Travis CI is a hosted, distributed continuous integration service; which insured that the build is passing.
 
 What I learnt:
 ----
@@ -71,5 +74,4 @@ What to improve:
 - There might be more efficient ways to access data from the API and I am keen to learn about them; also it would be best to load the content once the response comes back instead of a fixed 5 seconds delay.
 - sass or less compiling instead of css could also be added.
 - Component state is fine as a MVP, but an application architecture such as Flux or Redux would be a great addition.
-- A continuous integration tool could also be added.
 - The project is still open and I will keep improving it as I find the time to. Suggestions are more than welcome.
