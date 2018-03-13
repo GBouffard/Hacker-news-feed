@@ -15,7 +15,8 @@ exports[`StoryPopUp  renders correctly 1`] = `
     </div>
     <a
       className="popup__close-button"
-      href="#"
+      href="#guillaume-hacker-news-app"
+      role="Button"
     >
       ×
     </a>
