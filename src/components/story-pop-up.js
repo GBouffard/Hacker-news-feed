@@ -17,7 +17,8 @@ const StoryPopUp = ({ id, title, url }) => {
         </div>
         <a
           className="popup__close-button"
-          href="#">
+          role="Button"
+          href="#guillaume-hacker-news-app">
           &times;
         </a>
         <div

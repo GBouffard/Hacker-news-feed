@@ -51,11 +51,13 @@ class App extends Component {
 
     return (
       <div
+        id="guillaume-hacker-news-app"
         className="App">
 
         <header
           className="App-header">
           <img
+            alt="Guillaume hacker news logo"
             className="App-logo"
             src="/images/Guillaume_hacker_news.png" />
         </header>
